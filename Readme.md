@@ -3,7 +3,7 @@
 This is my personal portfolio website where I showcase my web development projects, skills, and experience.
 
 ## 🔗 Live Site
-[View Portfolio](https://kinza98.github.io/Portfolio/)
+[View Portfolio](https://kinza98.github.io/freelance-portfolio/)
 
 ## 🛠️ Built With
 - HTML
