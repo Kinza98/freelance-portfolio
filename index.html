@@ -1,0 +1,594 @@
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Front-End Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="author" content="Kinza Ijaz" />
+    <meta name="keywords" content="front-end developer, web developer, Figma to HTML, HTML, CSS, JavaScript, front end" />
+    <meta name="description" content="A front-end developer's portfolio website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css">
+    <!-- font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body class="color-light lato-regular">
+
+    <!-- =========================== 
+                  Page Loader 
+        ===========================  -->
+    <div class="dot-loader">
+      <span></span><span></span><span></span>
+    </div>
+
+    <!-- =========================== 
+                  Header 
+        ===========================  -->
+    <header class="w-100" id="header">
+      <div class="container">
+        <div class="d-flex flex-row w-100 justify-space-between lato-regular align-center">
+          <div id="logo">
+            <pre>&lt;ki&gt;</pre> <!-- Logo-->
+          </div>
+          <nav> <!-- Navigation Manu-->
+            <i class="fa fa-bars" id="responsive-bars" onclick="menuToggle()" aria-label="Toggle menu"></i>
+            <ul class="gap-2" id="nav-menu"  role="navigation">
+              <li class="no-style"><a class="no-underline" href="#intro"><i class="fa fa-home"></i> Home</a></li>
+              <li class="no-style"><a class="no-underline" href="#about"><i class="fa fa-user"></i> About</a></li>
+              <li class="no-style"><a class="no-underline" href="#skills"><i class="fa fa-code"></i> Skills</a></li>
+              <li class="no-style"><a class="no-underline" href="#experience"><i class="fa fa-briefcase"></i> Experience</a></li>
+              <li class="no-style"><a class="no-underline" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================== 
+                Introduction 
+        ===========================  -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <div class="d-grid grid-50 h-full justify-center align-center gap-sm-3">
+            <div>
+              <p>
+                <span class="text-blue font-monospace">Hello, I'm</span>
+              </p>
+                <h1 class="myName">
+                  <span class="text-white">FrontEnd</span>
+                  <br>
+                  <span class="color-gradient">Developer</span>  
+                </h1>
+              <p>
+                Passionate about turning ideas into beautiful, functional websites using JavaScript and modern web technologies.
+              </p>
+              <div class="btns">
+                <a class="btn btn-gradient no-underline" aria-label="Contact me" href="#contact">Contact me</a>
+                <a class="btn btn-outline no-underline" aria-label="Learn more" href="#about">Learn More</a>
+              </div>
+            </div>
+            <div>
+              <div class="code-box">
+                <div class="d-flex align-center">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-orange"></span>
+                  <span class="dot dot-green"></span>
+                  developer.js
+                </div>
+                <pre class="line-numbers" id="line-numbers"></pre>
+                <span class="code"><pre id="typed-code"></pre><span class="cursor"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- =========================== 
+                  About Me 
+        ===========================  -->
+      <section id="about">
+        <div class="container">
+          <h2 class="text-white text-center">About <span class="text-blue">Me</span></h2>
+          <div class="heading-underline"></div>
+          <div class="grid mt-st gap-sm-2 justify-center align-center">
+            <div class="card card-1">
+              <h3 class="text-white">MY Journey</h3>
+              <p>
+                A passionate front-end developer with a focus on building beautiful, functional web experiences. 
+                Starting as a freelancer, the journey has grown through hands-on experience, client collaboration, 
+                and a commitment to delivering clean, modern, and user-friendly websites.
+              </p>
+              <p>
+                Through freelance work on Fiverr, have helped clients bring their ideas to life—focusing on 
+                responsive design, performance optimization, and maintainable code. Every project is approached 
+                with technical precision and creative problem-solving to ensure smooth, engaging user experiences.
+              </p>
+            </div>
+            <div class="card zoom card-2">
+              <div class="d-flex flex-row gap-1 justify-start align-center">
+                <div class="icon gradient-box"><i class="fa fa-code"></i></div>
+                <div class="content">
+                  <h4 class="text-white">Clean Code</h4>
+                  <p>Writing maintainable, scalable code that follows best practices</p>
+                </div>
+              </div>
+            </div>
+            <div class="card zoom card-3">
+              <div class="d-flex flex-row gap-1 justify-start align-center">
+                <div class="icon gradient-box"><i class="fa fa-bolt"></i></div>
+                <div class="content">
+                  <h4 class="text-white">Fast Delivery</h4>
+                  <p>Quick turnaround times without compromising on quality</p>
+                </div>
+              </div>
+            </div>
+            <div class="card zoom card-4">
+              <div class="d-flex flex-row gap-1 justify-start align-center">
+                <div class="icon gradient-box"><i class="fa fa-users"></i></div>
+                <div class="content">
+                  <h4 class="text-white">Client Focus</h4>
+                  <p>Understanding client needs and delivering beyond expectations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================== 
+                  My Skills 
+        ===========================  -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="text-white text-center">My <span class="text-blue">Skills</span></h2>
+          <div class="heading-underline"></div>
+          <p class="text-center head-descr">Technologies and tools I use to bring ideas to life</p>
+          <div class="d-grid mt-st grid-50 gap-sm-3 justify-center align-start">
+            <div class="loaders">
+              <h3 class="text-white"><span class="vertical-gradient"></span>Technical Skills</h3>
+              <div class="d-flex flex-column mt-sm-st gap-2">
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>HTML</span>
+                    <span >95%</span>
+                  </div>
+                  <div class="percentage-bar load-95" data-target="95"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>CSS</span>
+                    <span >90%</span>
+                  </div>
+                  <div class="percentage-bar load-90" data-target="90"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>JavaScript</span>
+                    <span >80%</span>
+                  </div>
+                  <div class="percentage-bar load-80" data-target="80"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>Bootstrap</span>
+                    <span >85%</span>
+                  </div>
+                  <div class="percentage-bar load-85" data-target="85"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>Tailwind CSS</span>
+                    <span >75%</span>
+                  </div>
+                  <div class="percentage-bar load-75"  data-target="75"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>Responsive Design</span>
+                    <span  >100%</span>
+                  </div>
+                  <div class="percentage-bar load-100" data-target="100"></div>
+                </div>
+                <div class="load-bar">
+                  <div class="d-flex justify-space-between">
+                    <span>Performance Optimization</span>
+                    <span >95%</span>
+                  </div>
+                  <div class="percentage-bar load-95"  data-target="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tags">
+              <h3 class="text-white"><span class="vertical-gradient"></span>Tools & Technologies</h3>
+              <div class="d-grid gap-15">
+                <span class="tag zoom">HTML</span>
+                <span class="tag zoom">CSS</span>
+                <span class="tag zoom">Javascript</span>
+                <span class="tag zoom">Bootstrap</span>
+                <span class="tag zoom">VS Code</span>
+                <span class="tag zoom">Git</span>
+                <span class="tag zoom">Figma</span>
+                <span class="tag zoom">Chrome DevTools</span>
+              </div>
+              <div class="card mt-sm-st card-light d-flex flex-column gap-1">
+                <h5 class="text-white">What I bring</h5>
+                <div class="d-flex align-center">
+                  <span class="bullet"></span>
+                  <p>Modern, responsive web applications</p>
+                </div>
+                <div class="d-flex align-center">
+                  <span class="bullet"></span>
+                  <p>Performance-optimized solutions</p>
+                </div>
+                <div class="d-flex align-center">
+                  <span class="bullet"></span>
+                  <p>Cross-browser compatibility</p>
+                </div>
+                <div class="d-flex align-center">
+                  <span class="bullet"></span>
+                  <p>SEO-friendly development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================== 
+                  Experience 
+        ===========================  -->
+      <section id="experience">
+        <div class="container">
+          <h2 class="text-white text-center">My <span class="text-blue">Experience</span></h2>
+          <div class="heading-underline"></div>
+          <p class="text-center head-descr">Freelance Frontend Developer specializing in modern web technologies</p>
+          <div class="d-flex mt-st card flex-column color-light">
+            <h3 class="text-white">Freelance Frontend Developer</h3>
+            <div class="d-flex align-start justify-space-between flex-wrap">
+              <div class="d-flex justify-center  flex-column experience-ov">
+                <a href="#" rel="noopener noreferrer" target="_blank">Fiverr Freelancer</a>
+                <span class="color-gray duration">2021 - Present</span>
+              </div>
+              <div> 
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <span class="rating">5 Rating</span>
+              </div>
+            </div>
+            <p>
+              As a freelance frontend developer on Fiverr, I've successfully delivered high-quality web solutions to 
+              clients worldwide. My focus has been on creating responsive, modern websites 
+              and web applications that meet client requirements while maintaining clean, efficient code standards.
+            </p>
+            <div class="d-flex flex-res-row justify-space-around align-center mt-sm-st gap-15">
+              <div class="d-flex flex-column justify-center align-center gap-05">
+                <span class="gradient-box box-50"><i class="fa fa-star"></i></span>
+                <span class="text-white text-big" >5/5</span>
+                <span class="">Client Rating</span>
+              </div>
+              <div class="d-flex flex-column justify-center align-center gap-05">
+                <span class="gradient-box box-50"><i class="fa fa-trophy"></i></span>
+                <span class="text-white text-big">15+</span>
+                <span class="">Orders Completed</span>
+              </div>
+              <div class="d-flex flex-column justify-center align-center gap-05">
+                <span class="gradient-box box-50"><i class="fa fa-thumbs-up"></i></span>
+                <span class="text-white text-big">100%</span>
+                <span class="">Client Satisfaction</span>
+              </div>
+              <div class="d-flex flex-column justify-center align-center gap-05">
+                <span class="gradient-box box-50"><i class="fa fa-suitcase"></i></span>
+                <span class="text-white text-big">&lt;2hrs</span>
+                <span class="">Response time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="container">
+            <h3 class="text-white text-center">Services I Offer</h3>
+            <div class="d-flex flex-2 gap-15 mt-sm-st">
+              <div class="card zoom d-flex flex-column gap-1">
+                <h4 class="text-white">Custom Web Development</h4>
+                <p>Building responsive, modern websites from scratch using React and modern web technologies.</p>
+                <div class="d-flex gap-05 flex-wrap w-100">
+                  <span class="tag-flat">React</span>
+                  <span class="tag-flat">HTML</span>
+                  <span class="tag-flat">CSS</span>
+                  <span class="tag-flat">JavaScript</span>
+                </div>
+              </div>
+              <div class="card zoom d-flex flex-column gap-1">
+                <h4 class="text-white">Code Cleanup & Refactoring</h4>
+                <p>Improving existing code to be more maintainable, readable, and up-to-date with modern standards.</p>
+                <div class="d-flex gap-05 flex-wrap w-100">
+                  <span class="tag-flat">Code Formatting</span>
+                  <span class="tag-flat">Browser Compatibility</span>
+                  <span class="tag-flat">Responsive Fixes </span>
+                </div>
+              </div>
+              <div class="card zoom d-flex flex-column gap-1">
+                <h4 class="text-white">UI/UX Implementation</h4>
+                <p>Converting designs into pixel-perfect, interactive web interfaces with smooth animations.</p>
+                <div class="d-flex gap-05 flex-wrap w-100">
+                  <span class="tag-flat">HTML</span>
+                  <span class="tag-flat">CSS</span>
+                  <span class="tag-flat">Tailwind CSS</span>
+                  <span class="tag-flat">JavaScript</span>
+                </div>
+              </div>
+              <div class="card zoom d-flex flex-column gap-1">
+                <h4 class="text-white">Bug Fixes & Maintenance</h4>
+                <p>Identifying and resolving issues, updating existing codebases, and adding new features.</p>
+                <div class="d-flex gap-05 flex-wrap w-100">
+                  <span class="tag-flat">Debugging</span>
+                  <span class="tag-flat">Code Review</span>
+                  <span class="tag-flat">Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- =========================== 
+                  My Projects 
+        ===========================  -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="text-white text-center">Featured <span class="text-blue">Projects</span></h2>
+          <div class="heading-underline"></div>
+          <p class="text-center head-descr">Showcasing some of the projects I've worked on, demonstrating my skills in modern web development</p>
+          <div class="project-container d-flex justify-space-between flex-row flex-wrap mt-st gap-sm-2">
+            <div class="card-project">
+              <div class="project-img">
+                <img src="images/snake.png" alt="Snake Game Screrenshot">
+              </div>
+              <div class="project-details">
+                <h3 class="text-white">Snake Game</h3>
+                <p>
+                  A modern version of the classic Snake Game with a fresh look and smooth gameplay. 
+                  It has two levels: Easy and Hard, so you can choose how challenging you want it to be. 
+                  It works well on all screen sizes.
+                </p>
+                <div class="key-features">
+                  <span class="text-blue feature-heading">Key Features</span>
+                  <div class="feature-point">
+                    <i class="fa fa-tablet"></i>
+                    <span>Mobile Responsive</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-gamepad"></i>
+                    <span>Easy & Hard Modes</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-shield"></i>
+                    <span>Wall Obstacles & Score Tracking</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-05 flex-wrap">
+                  <span class="tag-flat">HTML5</span>
+                  <span class="tag-flat">Canvas</span>
+                  <span class="tag-flat">JavaScript</span>
+                  <span class="tag-flat">localStorage</span>
+                  <span class="tag-flat">CSS</span>
+                </div>
+                <div class="d-flex flex-row gap-1 align-center">
+                  <a class="btn-gradient mt-0 text-center" href="https://kinza98.github.io/Snake/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-external-link"></i> 
+                    <span class="vertical-top"> View Project </span>
+                  </a>
+                  <a class="no-underline" target="_blank" href="https://github.com/Kinza98/Snake"><i class="fa fa-github"></i></a>                  
+                </div>
+              </div>
+            </div>
+            <div class="card-project">
+              <div class="project-img">
+                <img src="images/thunder.png" alt="Thunder Effect">
+              </div>
+              <div class="project-details">
+                <h3 class="text-white">Lightning & Thunderstorm Animation</h3>
+                <p>
+                  A canvas-based animated storm effect with lightning bolts, flickering flashes, 
+                  realistic rain, and toggleable thunder sounds. Fully responsive and visually immersive.
+                </p>
+                <div class="key-features">
+                  <span class="text-blue feature-heading">Key Features</span>
+                  <div class="feature-point">
+                    <i class="fa fa-tablet"></i>
+                    <span>Mobile Responsive</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-bolt"></i>
+                    <span>Dynamic Lightning & Flicker</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-volume-up"></i>
+                    <span>Rain & Thunder Sound Effects</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-05 flex-wrap">
+                  <span class="tag-flat">HTML5</span>
+                  <span class="tag-flat">Canvas</span>
+                  <span class="tag-flat">JavaScript</span>
+                  <span class="tag-flat">CSS</span>
+                </div>                
+                <div class="d-flex flex-row gap-1 align-center">
+                  <a class="btn-gradient mt-0 text-center" href="https://kinza98.github.io/Lightening/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-external-link"></i>
+                    <span class="vertical-top"> View Project </span>
+                  </a>
+                  <a class="no-underline" target="_blank" href="https://github.com/Kinza98/Lightening/tree/main"><i class="fa fa-github"></i></a>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project">
+              <div class="project-img">
+                <img src="images/bingo-card.png" alt="Bingo Game Screenshot">
+              </div>
+              <div class="project-details">
+                <h3 class="text-white">Bingo Game</h3>
+                <p>
+                  A fun and interactive 5×5 Bingo game with a classic look and engaging features. Play with friends, or test your luck against a smart bot. It’s responsive, colorful, and includes sound effects to enhance the experience.
+                </p>
+                <div class="key-features">
+                  <span class="text-blue feature-heading">Key Features</span>
+                  <div class="feature-point">
+                    <i class="fa fa-tablet"></i>
+                    <span>Mobile Responsive</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-sliders"></i>
+                    <span>Multiplayer via Socket.io</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-microchip"></i>
+                    <span>Smart Bot Option</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-tint"></i>
+                    <span>Card Color Customization</span>
+                  </div>
+                  <div class="feature-point">
+                    <i class="fa fa-volume-up"></i>
+                    <span>Sound Effects</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-05 flex-wrap">
+                  <span class="tag-flat">HTML</span>
+                  <span class="tag-flat">CSS</span>
+                  <span class="tag-flat">JavaScript</span>
+                  <span class="tag-flat">Socket.io</span>
+                </div>
+                <div class="d-flex flex-row gap-1 align-center">
+                  <a class="btn-gradient mt-0 text-center" href="https://kinza98.github.io/BingoGame/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-external-link"></i>
+                    <span class="vertical-top"> View Project </span>
+                  </a>
+                  <a class="no-underline" target="_blank" href="https://github.com/Kinza98/BingoGame"><i class="fa fa-github"></i></a>                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- =========================== 
+                  Contact Me 
+        ===========================  -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="text-white text-center">Get In <span class="text-blue">Touch</span></h2>
+          <div class="heading-underline"></div>
+          <p class="text-center head-descr">Ready to start your project? Let's discuss how I can help bring your ideas to life</p>
+          <div class="d-flex flex-row flex-wrap mt-st gap-2 justify-space-between">
+            <div class="contact-ov d-flex flex-column gap-15">
+              <h3 class="text-white">Let's Work Together</h3>
+              <p>
+                I'm always excited to take on new projects and challenges. Whether you need a new website, 
+                want to improve an existing one, or just have questions about web development, I'm here to help.
+              </p>
+              <div class="d-flex gap-sm-15 flex-column">
+                <div class="card">
+                  <div class="d-flex flex-row gap-1 justify-start align-start">
+                    <div class="icon gradient-box"><i class="fa fa-envelope"></i></div>
+                    <div class="content d-flex gap-05 flex-column">
+                      <h4 class="text-white">Email</h4>
+                      <span class="text-blue">kinzaij@gmail.com</span>
+                      <span class="text-gray">Send me an email anytime</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="d-flex flex-row gap-1 justify-start align-start">
+                    <div class="icon gradient-box"><i class="fa fa-map-marker"></i></div>
+                    <div class="content d-flex gap-05 flex-column">
+                      <h4 class="text-white">Location</h4>
+                      <span class="text-blue">Remote Worldwide</span>
+                      <span class="text-gray">Available for remote work</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="d-flex flex-row gap-1 justify-start align-start">
+                    <div class="icon gradient-box"><i class="fa fa-clock-o"></i></div>
+                    <div class="content d-flex gap-05 flex-column">
+                      <h4 class="text-white">Response Time</h4>
+                      <span class="text-blue">< 2 hours</span>
+                      <span class="text-gray">Quick response guaranteed</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-light d-flex flex-column gap-1">
+                  <h5 class="text-white">What You Can Expect</h5>
+                  <div class="d-flex align-center">
+                    <span class="bullet"></span>
+                    <p>Detailed project proposal</p>
+                  </div>
+                  <div class="d-flex align-center">
+                    <span class="bullet"></span>
+                    <p>Transparent communication</p>
+                  </div>
+                  <div class="d-flex align-center">
+                    <span class="bullet"></span>
+                    <p>Quality deliverables on time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form card">
+                <h3 class="text-white"><i class="fa fa-envelope-o text-blue"></i>Send Message</h3>
+              <form class="d-flex flex-column gap-15 mt-sm-st" method="POST">
+                  <div class="d-flex flex-column gap-05 w-100 ">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                  </div>
+                  <div class="d-flex flex-column gap-05 w-100">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="john@gmail.com">
+                  </div>
+                <div class="d-flex flex-column gap-05">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject" placeholder="Project Discussion">
+                </div>
+                <div class="d-flex flex-column gap-05">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message"rows="8" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button class="btn-gradient">
+                  <i class="fa fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========================== 
+                  Footer 
+        ===========================  -->
+    <footer class="mt-st">
+      <div class="container">
+        <p class="text-center">
+          &copy; 2025 Kinza Ijaz. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================== 
+                  Scroll to TOP 
+        ===========================  -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+      <i class="fa fa-chevron-up"></i>
+    </button>
+    <!-- JS Files -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
